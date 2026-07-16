@@ -6,11 +6,13 @@ Contents (upload everything, keeping the folder structure):
   services.html  Services
   about.html     About
   contact.html   Contact
+  privacy.html   Privacy Policy
+  terms.html     Terms of Use
   img/           Social-preview images (og:image). Keep at site root.
   _headers       Security headers (Cloudflare Pages / Netlify read this
                  automatically; other hosts ignore it harmlessly)
   robots.txt     Allows all crawlers, points to the sitemap
-  sitemap.xml    The four page URLs for search engines
+  sitemap.xml    The six page URLs for search engines
 
 Deploying to Cloudflare Pages (recommended, free):
   1. dash.cloudflare.com -> Workers & Pages -> Create -> Pages
@@ -42,8 +44,9 @@ Editing pages WITHOUT Claude:
     5. Save, re-upload the file to Cloudflare Pages, done.
   Rules of thumb:
     - Text and phone/email swaps: safe by hand.
-      (The WhatsApp number appears as 254800FLOW in links and the form code;
-       replace every occurrence with your real digits-only number.)
+      (The WhatsApp number appears as 2548003569 in links and the form code,
+       shown as +254-800-FLOW in visible text; replace every occurrence
+       with your real digits-only number.)
     - Swapping a photo, adding a section, layout changes: not hand-editable;
       these need the source project (or any web developer working from it).
   Keep a copy of the original file before editing so you can roll back.
@@ -52,7 +55,8 @@ Contact form:
   The "Send inquiry" button opens the visitor's WhatsApp (or email)
   pre-filled to the business number. No server is needed and there is
   nothing for bots to submit to, so form spam is not possible.
-  BEFORE LAUNCH: replace the +254-800-FLOW placeholder with the real number.
+  BEFORE LAUNCH: replace the +254-800-FLOW display number and its digits-only
+  form/link value (currently 2548003569) with the real number.
   WhatsApp links need digits only (e.g. wa.me/2547XXXXXXXX).
 
 Security notes:
